@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h1>상품을 등록 해 주세요</h1>
+		<form action="/hs/productsave.do" method = "post">
+			<label for="proname">상품명</label> <input type="text" id="proname" name="productname"/> <br>
+			<label for="proprice">상품 가격</label> <input type="text" id="proprice" name="productprice"/> <br>
+			<label for="prodisc">상품 설명</label> <input type="text" id="prodisc" name="productdiscription"/> <br>
+			<input type="submit" value ="save"/>
+			<input type="reset"/>
+		</form>
+	</body>
+</html>
